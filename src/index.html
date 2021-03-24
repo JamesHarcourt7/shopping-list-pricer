@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        var xhReq = new XMLHttpRequest();
+        xhReq.open("GET", "/webdriver", false);
+        xhReq.send(null);
+        var resp = xhReq.responseText;
+
+        document.getElementById("temp-output").innerHTML = resp;
+    </script>
+    <body>
+        <p id="temp-output">hee</p>
+    </body>
+</html>
